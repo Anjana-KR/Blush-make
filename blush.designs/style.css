@@ -336,44 +336,49 @@ tab-size: 4;
     box-sizing: border-box;
     margin: 0px;
     height: 5430.2px;
+    overflow-x: hidden;
 }
 .illustration-side{
     position: relative;
      box-sizing: border-box;
      margin: 0px;
-     padding: 0px 12px 24px 12px;
+     padding-left: 12px;
+     padding-right: 12px;
+     padding-bottom: 24px;
       grid-auto-flow: row;
      max-width: 1400px;
+     margin-top: 0;
 }
 .home-page{
-    align-items: center;
-    box-sizing: border-box;
+    /* align-items: center;
+    box-sizing: border-box; */
     grid-auto-flow: row;
     padding-bottom: 40px;
     display: grid;
     gap: 48px;
-
     margin: 0px;
+    
     }
 
 .hero-page{
-
      align-items: center;
     box-sizing: border-box;
     display: grid;
    text-align: center;
    grid-auto-columns: 1fr;
    gap: 8px;
+   /* width: 100%; */
    min-height: 50vh;
     margin-top: 32px;
   
     padding: 32px 0px;
-    text-size-adjust: 100%;
+   
 }
 .hero-text-container{
     width: 100%;
+    text-align: center;
     box-sizing: border-box;
-   
+    
 
 }
 .hero-header-text{
@@ -394,7 +399,6 @@ tab-size: 4;
     margin: 16px 0px;
     display: block;
     box-sizing: border-box;
-   
     margin: 16px 0px;
     text-size-adjust: 100%;
     font-size: 14px;
@@ -422,7 +426,7 @@ tab-size: 4;
     display: flex;
     box-sizing: border-box;
     height: 48px;
-   margin: 0px 10px 10px 0px ;
+    margin: 0px 10px 10px 0px ;
     text-decoration: none;
     padding-left:1.5rem;
     padding-right: 1.5rem;
@@ -490,6 +494,9 @@ tab-size: 4;
       color: rgb(255,255,255);
       cursor: pointer;
 }
+.lottie-container-one{
+    overflow-x: hidden;
+}
 .lottie-player{
     /* height: 100%;
     width: 100%; */
@@ -500,29 +507,8 @@ tab-size: 4;
     justify-content: center;
 
 }
-.lottie-img-container{
-     box-sizing: border-box;
-     display: flex;
-     flex-direction: column;
-     width: 78%;
-     max-width: 100%;
-     min-height: 294px;
-     align-items: center;
-     text-size-adjust: 100%;
-     font-size: 12px;
-     font-weight: 400;
-     letter-spacing: 0.105px;
-     line-height: 18px;
-     tab-size: 4;
-     text-align: center;
-     justify-content: center;
+  
 
-}
-.lottie-img-container img{
-
-   height: 90vw;
-    
-}
 .skip-content{
       box-sizing: border-box;
       height: 1px;
@@ -572,6 +558,7 @@ tab-size: 4;
 .blush-make{
      box-sizing: border-box;
      display: block;
+     min-width: 0px;
      margin: 0px;
      padding: 0px;
      text-size-adjust :100%;
@@ -604,25 +591,52 @@ tab-size: 4;
      grid-template-columns: 1fr;
 
 }
-.graphic-one{
+.graphic-here{
     
  text-align: center;
  margin: 20px;
     
 }
 
-.graphic-one-container{
-   width: 243px;
-   height: 208px;
+.graphic-here-container{
    box-sizing: border-box;
-   padding: 0px;
-   margin: 0px;
-   background: none;
-
+    display: inline-block;
+    overflow: hidden;
+    /* width: initial;
+    height: initial; */
+    background: none;
+    opacity: 1;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    max-width: 100%;
+    text-align: center;
 
 }
-.graphic-one h3{
-    font-size: 1.5rem;
+.graphic-here img{
+   
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: auto;
+    display: block;
+    /* width: 100%;
+    height:100%; */
+    /* min-width: 100%; */
+    max-width: 100%;
+    /* min-height: 100%; */
+    max-height: 100%;
+}
+
+
+
+.graphic-here h3{
+    font-size: 16px;
     font-weight: bold;
     margin-top: 24px;
     line-height: 27px;
@@ -634,7 +648,7 @@ tab-size: 4;
     color: rgb(0,0,0);
 
 }
-.graphic-one p{
+.graphic-here p{
     margin: 0;
     font-size: 14px;
     font-family: Regular;
@@ -653,61 +667,18 @@ tab-size: 4;
      text-align: center;
      margin: 20px;
 }
-.graphic-two h3{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 24px;
-    line-height: 27px;
-    letter-spacing: 0px;
-    margin-bottom: 3.6px;
-    font-size: 18px;
-    tab-size: 4;
-    text-align: center;
-    color: rgb(0,0,0);
-}
-.graphic-two p{
-    font-size: 14px;
-    font-family: regular;
-    font-weight: 400;
-    margin: 0;
-    letter-spacing: 0.1225px;
-    text-align: center;
-    line-height: 23.8px;
 
-}
-.graphic-two-img{
-      width: 278px;
-      height: 208px;
-}
+
+
+
+
 .graphic-three{
     text-align: center;
     margin: 20px;
 }
-.graphic-three-img{
-    width: 311.2px;
-    height: 204px;
-}
-.graphic-three h3{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 24px;
-    line-height: 27px;
-    letter-spacing: 0px;
-    margin-bottom: 3.6px;
-    font-size: 18px;
-    tab-size: 4;
-    text-align: center;
-    color: rgb(0,0,0);
-}
-.graphic-three p{
-    font-size: 14px;
-    font-family: regular;
-    font-weight: 400;
-    margin: 0;
-    letter-spacing: 0.1225px;
-    text-align: center;
-    line-height: 23.8px;
-}
+
+
+
 
 .try-new-collection{
     min-width: 0px;
@@ -1050,7 +1021,18 @@ tab-size: 4;
     display: inline-flex;
 
  }
-
+ .graphic-one img{
+    width: 243px;
+    height: 208px;
+ }
+ .graphic-two img{
+    width: 278px;
+    height: 208px;
+ }
+.graphic-three img{
+    width:316px;
+    height: 208px;
+}
 
 
 
@@ -1079,7 +1061,15 @@ tab-size: 4;
        
     }
     .blush-make{
-        
+        min-width: 0px;
+
+    }
+    .how-does{
+   text-align: center;
+    margin: 24px auto;
+    font-size: 2em;
+    font-weight: bold;
+    max-width: 520px;  
     }
     .dots-section{
          display: flex;  
@@ -1089,25 +1079,8 @@ tab-size: 4;
 
 
     }
-    .hero-page{
-        gap: 16px;
-        min-width: 0;
-        display: grid;
-    -webkit-box-align: center;
-    align-items: center;
-    text-align: center;
-    grid-auto-columns: 1fr;
-    margin: 32px 0px 0px;
-    width: 100%;
-    min-height: 50vh;
-    padding: 32px 0px;
-
-
-    }
-    .home-page{
-        gap: 80px;
-       
-    }
+   
+   
  .header{
     height: 56px;
  }
@@ -1159,6 +1132,12 @@ tab-size: 4;
     display: flex;
     flex-direction: column;
     }
+    .graphic-three{
+        grid-column: span 2;
+        margin: 20px;
+        text-align: center;
+    }
+   
 
 
     .signup{
@@ -1198,9 +1177,6 @@ tab-size: 4;
    .unlock-creativity{
    
    }
-   
-
-
 
    .header-tab{
     display: block;
@@ -1322,11 +1298,13 @@ tab-size: 4;
         line-height: 56px;
         
         text-align: center;
-        height: 100%;
+        
    }
    .hero-header-text p{
     font-size: 16px;
     line-height: 1.7rem;
+    text-align: center;
+    margin: 16PX 0;
    }
    .dots-section{
     
@@ -1368,6 +1346,7 @@ tab-size: 4;
    .header-text-details{
     font-size: 16px;
     line-height: 1.7em;
+    margin: 16px 0;
 
    }
    .blush-make h2{
@@ -1381,14 +1360,59 @@ tab-size: 4;
    .graphics{
     display: grid;
     grid-template-columns: 1fr 1fr;
-   }
+   
+} 
+.graphic-here{
+
+}
+
+
+    
+ .graphic-here h3{
+     font-size: 21px;
+    font-weight: bold;
+    margin-top: 24px;
+ }
+ .graphic-here p{
+     font-size: 16px;
+     line-height: 1.7em;
+     text-align: center;
+ }
+.graphic-two{
+        margin: 20px;
+    text-align: center;
+}
+
+
+
    lottie-player{
      margin: 0;
      padding: 0;
-     width: 100vw;
-     height: 100vh;
+     width:100%;
+     height: 100%;
+    
+   }
+   .hero-page{
+       min-width: 0px;
+       gap: 16px;
+       display: grid;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    grid-auto-columns: 1fr;
+    margin: 32px 0px 0px;
+    gap: 8px;
+    min-height: 50vh;
+    padding: 32px 0px;
+}
+.home-page{
+           display: grid;
+    grid-auto-flow: row;
+    gap: 80px;
+    padding-bottom: 40px;
+    
+}
 
-   
 
 
 
@@ -1398,7 +1422,7 @@ tab-size: 4;
 
 
 
-}
+
 
 
 .posts-by-community{
@@ -1464,7 +1488,7 @@ tab-size: 4;
      object-fit: contain;
       object-position: center;
       border-radius: 8px;
-     border: .08px solid #dbd8db;
+      border: .08px solid #dbd8db;
       padding: 5px;
       display: flex;
       align-items: center;
@@ -1475,6 +1499,7 @@ tab-size: 4;
    width: 92%;
    max-width: 100%;
 }
+
 
 
 
@@ -2150,9 +2175,10 @@ height: 100%;
 .footer{
     border-top: 1px solid #dbdbdb;
     margin-top: 18px;
- 
-    position: sticky;
+    
+    /* position: sticky; */
     top: 100%;
+    overflow-x: hidden;
      padding-top: 32px;
     padding-left: 12px;
   
@@ -2164,7 +2190,8 @@ height: 100%;
    padding-right: 12px;
    padding-left: 12px;
     margin: 0px auto;
-    width: 100%;
+    overflow-x: hidden;
+    /* width: 100%; */
     position: relative;
     background: url('assets/blush-image.svg') center bottom -50px / 200px no-repeat;
 }

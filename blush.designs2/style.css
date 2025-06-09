@@ -1,0 +1,122 @@
+@font-face {
+    font-family:light ;
+    src: url('fonts/gorditalight-webfont.woff2') format('woff2');
+
+}
+@font-face {
+    font-family: Regular;
+    src: url('fonts/gorditaregular-webfont.woff2')format('woff2');
+    
+}
+@font-face {
+    font-family: Bold;
+    src: url('fonts/gorditabold-webfont.woff2') format('woff2');
+}
+@font-face {
+    font-family: Medium ;
+    src: url('fonts/gorditamedium-webfont.woff2');
+}
+ 
+h2,h3,h4,h1{
+    margin: 0px;
+}
+body{
+     box-sizing: border-box;
+     padding: 0px;
+     margin: 0px;
+     
+     background-color: rgb(255,255,255);
+     color: rgb(0,0,0);
+
+}
+
+.main-container{
+     display: flex;
+     box-sizing: border-box;
+     flex-direction: column;
+      margin: 0px;
+      padding: 0px;
+      
+}
+.header-section{
+    position: sticky;
+    align-items: center;
+    box-sizing: border-box;
+     display: grid;
+     grid-template-columns:auto 1fr auto;
+    gap:8px;
+    top: 0px;
+    height: 56px;
+    margin: 0px;
+    padding: 0px 12px;
+    z-index: 30;
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
+    
+    border-bottom:0.8px solid  rgb(209,216,219);
+    box-shadow: 
+   rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
+
+
+}
+
+.logo-img-container{
+    width: 24x;
+    height: 24px;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+    margin: 0px;
+    padding: 0px;      
+ 
+}
+.lens-img-container img {
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+ .lens-img-container{
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+    display:inline-flex;
+    padding: 0px;
+    align-items: center;
+    margin: 0px;
+    flex-shrink: 0;
+ }
+
+
+
+.search-area input {
+    
+     box-sizing: border-box;
+    height: 40px;
+    display: flex;
+     width: 50%;
+     max-width: 365px;
+   justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: start;
+    text-overflow: none;
+    text-shadow: none;
+    word-spacing: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    tab-size: 4;
+    letter-spacing: 0.1225px;
+    font-style: normal;
+    font-family: regular;
+     background-color:rgb(255,255,255);
+    outline-offset: -2px;
+     color: rgb(40,50,55);
+    text-size-adjust: 100%;
+    border-radius: 4px;
+   
+    border: 0.8px solid  rgb(209,216,219) ;
+   
+}
